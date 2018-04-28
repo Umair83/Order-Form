@@ -22,12 +22,32 @@
 		text-decoration:underline;
 		font-family:"Arial Black", Gadget, sans-serif;}
 		
-		#customername{
-		border:1px solid grey;}
+		
 		
 		.info{
 		border:none;
 		border-bottom:1px solid grey;}
+		
+		form{
+		margin-top:15px;
+		}
+		
+		form #company{
+		margin-left:38px;}
+		
+		form #phone{
+		margin-left:60px;}
+		
+		form #fax{
+		margin-left:76px;}
+		
+		form #email{
+		margin-left:62px;}
+		
+		form .info{
+		margin-left:5px;}
+		
+		
 	</style>
 </head>
 <body>
@@ -38,15 +58,19 @@
 	</div>
 	<div>
 		<form>
-			Customer Name:
-			<input id="customername" type="text" name="customername"><br>
-			Company:
+			<span id="customername">Customer Name</span>
+			<input type="text" name="customername"><br>
+			
+			<span id="company">Company</span>
 			<input class="info" type="text" name="company"><br>
-			Phone:
+			
+			<span id="phone">Phone</span>
 			<input class="info" type="tel"><br>
-			Fax:
+			
+			<span id="fax">Fax</span>
 			<input class="info" type="tel"><br>
-			Email:
+			
+			<span id="email">Email</info>
 			<input class="info" type="email"><br>
 		</form>
 	</div>
