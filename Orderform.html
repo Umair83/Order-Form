@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#title{
+		border-style:solid;
+		background-color:black;
+		border-radius:5px;
+		padding:3px 3px 3px 3px;
+		}
+		
+		#orderform{
+		color:white;
+		letter-spacing:1px;
+		font-size:20px;
+		font-family:"Times New Roman", Times, serif;}
+		
+		#digicopy{
+		color:white;
+		float:right;
+		margin-top:-2px;
+		text-decoration:underline;
+		font-family:"Arial Black", Gadget, sans-serif;}
+		
+		#customername{
+		border:1px solid grey;}
+		
+		.info{
+		border:none;
+		border-bottom:1px solid grey;}
+	</style>
+</head>
+<body>
+<div>
+	<div id="title">
+		<span id="orderform">Order Form</span>
+		<span id="digicopy">DIGICOPY 'n' PRINT</span>
+	</div>
+	<div>
+		<form>
+			Customer Name:
+			<input id="customername" type="text" name="customername"><br>
+			Company:
+			<input class="info" type="text" name="company"><br>
+			Phone:
+			<input class="info" type="tel"><br>
+			Fax:
+			<input class="info" type="tel"><br>
+			Email:
+			<input class="info" type="email"><br>
+		</form>
+	</div>
+</div>
+</body>
+</html>
