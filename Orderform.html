@@ -13,7 +13,7 @@
 		color:white;
 		letter-spacing:1px;
 		font-size:20px;
-		font-family:"Times New Roman", Times, serif;}
+		font-family:Arial, Helvetica, sans-serif;}
 		
 		#digicopy{
 		color:white;
@@ -32,21 +32,54 @@
 		margin-top:15px;
 		}
 		
+		form #customername{
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		margin-bottom:15px;
+		font-size:18px;}
+		
+		form #info{
+		width:20%;
+		margin-bottom:10px;
+		border-width:0.5px;
+		border-style:solid;
+		border-color:grey;
+		border-radius:5px;
+		padding:5px;
+		outline:none;}
+		
 		form #company{
-		margin-left:38px;}
+		font-weight:bold;
+		font-family:Arial, Helvetica, sans-serif;
+		margin-left:60px;
+		}
 		
 		form #phone{
-		margin-left:60px;}
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		margin-left:85px;
+		}
 		
 		form #fax{
-		margin-left:76px;}
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		margin-left:107px;
+		}
 		
 		form #email{
-		margin-left:62px;}
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		margin-left:92px;
+		}
 		
 		form .info{
-		margin-left:5px;}
+		width:20%;
+		padding:3px;
+		margin-left:5px;
+		outline:none;}
 		
+		#personalinfo{
+		}
 		
 	</style>
 </head>
@@ -56,10 +89,10 @@
 		<span id="orderform">Order Form</span>
 		<span id="digicopy">DIGICOPY 'n' PRINT</span>
 	</div>
-	<div>
+	<div id="personalinfo">
 		<form>
 			<span id="customername">Customer Name</span>
-			<input type="text" name="customername"><br>
+			<input id="info" type="text" name="customername"><br>
 			
 			<span id="company">Company</span>
 			<input class="info" type="text" name="company"><br>
