@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +40,7 @@
 		font-size:18px;}
 		
 		form #info{
-		width:20%;
+		width:59%;
 		margin-bottom:10px;
 		border-width:0.5px;
 		border-style:solid;
@@ -73,12 +74,31 @@
 		}
 		
 		form .info{
-		width:20%;
+		width:60%;
 		padding:3px;
 		margin-left:5px;
 		outline:none;}
 		
 		#personalinfo{
+		display:inline-block;
+		width:45%;
+		border-style:solid;
+		border-color:red;
+		}
+		
+		#date{
+		display:inline-block;
+		width:45%;
+		border-style:solid;
+		border-color:red;}
+		
+		#date form span{
+		display:block;}
+		
+		#date input[type=date]{
+		border-style:solid;
+		border-color:red;
+		padding:5px;
 		}
 		
 	</style>
@@ -105,6 +125,19 @@
 			
 			<span id="email">Email</info>
 			<input class="info" type="email"><br>
+		</form>
+	</div>
+	<div id="date">
+		<form>
+			<span>Received</span>
+			<input type="date">
+			<input type="time">
+			<input type="text">
+			<input type="number">
+			<span>Date</span>
+			<span>Time</span>
+			<span>Received By</span>
+			<span>Job No</span>
 		</form>
 	</div>
 </div>
