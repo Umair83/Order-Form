@@ -3,11 +3,16 @@
 <html>
 <head>
 	<style>
+		body{
+		width:100%;
+		height:100%;}
+		
 		#title{
 		border-style:solid;
 		background-color:black;
 		border-radius:5px;
 		padding:3px 3px 3px 3px;
+		width:94%;
 		}
 		
 		#orderform{
@@ -77,30 +82,84 @@
 		width:60%;
 		padding:3px;
 		margin-left:5px;
+		margin-bottom:3px;
 		outline:none;}
+		
+		
 		
 		#personalinfo{
 		display:inline-block;
-		width:45%;
+		width:55%;
 		border-style:solid;
 		border-color:red;
 		}
 		
-		#date{
+		#datereceived{
+		position:relative;
 		display:inline-block;
-		width:45%;
+		width:40%;
+		top:-55px;
 		border-style:solid;
 		border-color:red;}
 		
-		#date form span{
-		display:block;}
+		#datereceived form #received{
+		display:block;
+		font-family:sans-serif;
+		font-size:18px;
+		margin-bottom:3px;
+		margin-left:120px;}
 		
-		#date input[type=date]{
+		#datereceived input[type=date]{
+		padding:7px;
+		letter-spacing:1px;
+		border-radius:5px;
+		border-width:0.5px;
 		border-style:solid;
-		border-color:red;
-		padding:5px;
+		margin-bottom:5px;
 		}
 		
+		#datereceived input[type=time]{
+		margin-left:15px;
+		padding:7px;
+		border-radius:5px;
+		border-width:1px;
+		border-style:solid;}
+		
+		#datereceived input[type=text]{
+		margin-left:15px;
+		padding:10px;
+		width:70px;
+		border-radius:5px;
+		border-width:1px;
+		border-style:solid;}
+		
+		#datereceived input[type=number]{
+		margin-left:15px;
+		padding:10px;
+		width:70px;
+		border-radius:5px;
+		border-width:1px;
+		border-style:solid;}
+		
+		#datereceived form #date1{
+		margin-left:50px;
+		font-family:sans-serif;
+		font-size:18px;}
+		
+		#datereceived form #time1{
+		margin-left:140px;
+		font-family:sans-serif;
+		font-size:18px;}
+		
+		#datereceived form #receivedby{
+		margin-left:45px;
+		font-family:sans-serif;
+		font-size:18px;}
+		
+		#datereceived form #jobno{
+		margin-left:30px;
+		font-family:sans-serif;
+		font-size:18px;}
 	</style>
 </head>
 <body>
@@ -127,17 +186,25 @@
 			<input class="info" type="email"><br>
 		</form>
 	</div>
-	<div id="date">
+	<div id="datereceived">
 		<form>
-			<span>Received</span>
+			<span id="received">Received</span>
 			<input type="date">
 			<input type="time">
 			<input type="text">
 			<input type="number">
-			<span>Date</span>
-			<span>Time</span>
-			<span>Received By</span>
-			<span>Job No</span>
+			<span id="date1">Date</span>
+			<span id="time1">Time</span>
+			<span id="receivedby">Received By</span>
+			<span id="jobno">Job No</span>
+		</form>
+	</div>
+	<div id="datedue">
+		<form>
+			<span id="due">Due</span>
+			<input type="date">
+			<input type="time">
+			<input type="radio">
 		</form>
 	</div>
 </div>
