@@ -160,6 +160,43 @@
 		margin-left:30px;
 		font-family:sans-serif;
 		font-size:18px;}
+		
+		#datedue{
+		border-style:solid;
+		border-color:red;
+		width:40%;
+		position:relative;
+		float:right;
+		right:53px;
+		top:-55px;}
+		
+		<!--#datedue form #due{
+		display:block;
+		font-family:sans-serif;
+		font-size:18px;
+		margin-bottom:3px;
+		margin-left:120px;}-->
+		
+		#datedue input[type=date]{
+		padding:7px;
+		letter-spacing:1px;
+		border-radius:5px;
+		border-width:0.5px;
+		border-style:solid;
+		margin-bottom:5px;
+		margin-left:5px;}
+		
+		#datedue input[type=time]{
+		margin-left:15px;
+		padding:7px;
+		border-radius:5px;
+		border-width:1px;
+		border-style:solid;
+		}
+		
+		#datedue form #call{
+		 margin-left:40px;
+		}
 	</style>
 </head>
 <body>
@@ -201,10 +238,18 @@
 	</div>
 	<div id="datedue">
 		<form>
-			<span id="due">Due</span>
-			<input type="date">
-			<input type="time">
-			<input type="radio">
+			<fieldset>
+				<legend>Due</legend>
+					<!--<span id="due">Due</span>-->
+					<input type="date" id="date">
+					<input type="time" id="time">
+					<input type="radio" id="call">
+					<input type="radio" id="deliver">
+					<label for="date2" id="date">Date</label>
+					<label for="time2" id="time">Time</label>
+					<label for="call" id="call">Will Call</label>
+					<label for="deliver" id="deliver">Deliver</label>
+			</fieldset>
 		</form>
 	</div>
 </div>
