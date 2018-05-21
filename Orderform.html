@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<style>
 		body{
 		width:100%;
@@ -34,6 +35,9 @@
 		border:none;
 		border-bottom:1px solid grey;}
 		
+		
+		<!--PERSONAL INFO-->
+	
 		form{
 		margin-top:15px;
 		}
@@ -84,7 +88,6 @@
 		margin-left:5px;
 		margin-bottom:3px;
 		outline:none;}
-		
 		
 		
 		#personalinfo{
@@ -183,8 +186,7 @@
 		border-radius:5px;
 		border-width:0.5px;
 		border-style:solid;
-		margin-bottom:5px;
-		margin-left:5px;}
+		margin-bottom:5px;}
 		
 		#datedue input[type=time]{
 		margin-left:15px;
@@ -194,8 +196,22 @@
 		border-style:solid;
 		}
 		
-		#datedue form #call{
-		 margin-left:40px;
+		#datedue input[type=radio]{
+		margin-left:20px;
+		 border-style:solid;
+		 border-color:red;
+		}
+		
+		#datedue form #deliver{
+		margin-right:170px;}
+		
+		#three{
+		width:auto;
+		margin-top:40px;
+		border-style:solid;
+		border-color:black;}
+		
+		#three span{
 		}
 	</style>
 </head>
@@ -238,20 +254,30 @@
 	</div>
 	<div id="datedue">
 		<form>
-			<fieldset>
-				<legend>Due</legend>
-					<!--<span id="due">Due</span>-->
-					<input type="date" id="date">
-					<input type="time" id="time">
-					<input type="radio" id="call">
-					<input type="radio" id="deliver">
-					<label for="date2" id="date">Date</label>
-					<label for="time2" id="time">Time</label>
-					<label for="call" id="call">Will Call</label>
-					<label for="deliver" id="deliver">Deliver</label>
-			</fieldset>
+			<span id="due">Due</span>
+			<input type="date" id="date">
+			<input type="time" id="time">
+			<input type="radio" id="call">
+			<input type="radio" id="deliver">
+			<span id="date2">Date</span>
+			<span id="time2">Time</span>
+			<span id="willcall">Will Call</span>
+			<span id="willdeliver">Deliver</span>
 		</form>
 	</div>
+	
+	<div id="three">
+		<span>Type</span>
+		<span>Xerox B&W</span>
+		<span>Canon Color</span>
+		<span>Off-set Printing</span>
+	</div>
+	
+	<!--C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\
+	Program Files\Intel\TXE Components\TCS\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\
+	Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\
+	Binn\;C:\Program Files\dotnet\-->
+	
 </div>
 </body>
 </html>
